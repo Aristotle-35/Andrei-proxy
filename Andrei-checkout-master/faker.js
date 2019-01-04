@@ -11,7 +11,7 @@ const db = require('./database/index.js');
 // const getDates = (startDate, stopDate) => {
 //   let dateArray = new Array();
 //   let currentDate = startDate;
-//   while (currentDate <= stopDate) {
+//   while (currentDate <= stopDa
 //       dateArray.push(new Date (currentDate));
 //       currentDate = currentDate.addDays(1);
 //   }
@@ -19,7 +19,7 @@ const db = require('./database/index.js');
 // }
 
 const loadNewCar = ((times = 101) => {
-  for (let i = 1; i < times; i + 1) {
+  for (let i = 1; i < times; i++) {
     const rangeTimes = faker.random.number({
       'min': 1,
       'max': 5,
@@ -28,7 +28,7 @@ const loadNewCar = ((times = 101) => {
     let date1 = faker.date.soon(30);
     const reservedDates = [];
     let range = [];
-    for (let j = 0; j < rangeTimes; j + 1) {
+    for (let j = 0; j < rangeTimes; j++) {
       const dateStart = faker.date.between(date, date1);
       const dateEnd = faker.date.soon(30, dateStart);
       // let range = getDates(dateStart, dateEnd);
