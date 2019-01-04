@@ -7,7 +7,7 @@ import End from './End';
 import Location from './Location';
 // import styles from './App.module.css';
 
-const server = 'http://localhost:3003/api/turash/checkouts/1';
+const server = 'http://localhost:3002/api/turash/checkouts/1';
 
 const Container1 = style.div`
   display: flex; 
